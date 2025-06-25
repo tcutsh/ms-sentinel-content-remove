@@ -18,7 +18,7 @@
                 "description": "Identifies an IP address that had 15 failed attempts to sign in via SSH in a 4 hour block during a 24 hour time period.\n Please note that entity mapping for arrays is not supported, so when there is a single value in an array, we will pull that value from the array as a single string to populate the entity to support entity mapping features within Sentinel. Additionally, if the array is multivalued, we will input a string to indicate this with a unique hash so that matching will not occur.\n As an example - ComputerList is an array that we check for a single value and write that into the HostName field for use in the entity mapping within Sentinel.",
                 "severity": "Low",
                 "enabled": false,
-                "query": ""
+                "query": "",
                 "queryFrequency": "P1D",
                 "queryPeriod": "P1D",
                 "triggerOperator": "GreaterThan",
@@ -104,7 +104,7 @@
                 "description": "Check for Squid proxy events associated with common ToR proxies. This query presumes the default squid log format is being used.\nhttp://www.squid-cache.org/Doc/config/access_log/",
                 "severity": "Low",
                 "enabled": false,
-                "query": ""
+                "query": "",
                 "queryFrequency": "P1D",
                 "queryPeriod": "P1D",
                 "triggerOperator": "GreaterThan",
@@ -190,7 +190,7 @@
                 "description": "Checks for Squid proxy events in Syslog associated with common mining pools. This query presumes the default Squid log format is being used.\n http://www.squid-cache.org/Doc/config/access_log/",
                 "severity": "Low",
                 "enabled": false,
-                "query": ""
+                "query": "",
                 "queryFrequency": "P1D",
                 "queryPeriod": "P1D",
                 "triggerOperator": "GreaterThan",
@@ -275,7 +275,7 @@
                 "description": "Identifies SFTP File Transfers with distinct folder count above certain threshold in a 15min time period.\n It requires SFTP VERBOSE loglevel to be enabled.\n Please note that entity mapping for arrays is not supported, so when there is a single value in an array, we will pull that value from the array as a single string to populate the entity to support entity mapping features within Sentinel. Additionally, if the array is multivalued, we will input a string to indicate this with a unique hash so that matching will not occur.",
                 "severity": "Medium",
                 "enabled": false,
-                "query": ""
+                "query": "",
                 "queryFrequency": "PT15M",
                 "queryPeriod": "PT15M",
                 "triggerOperator": "GreaterThan",
@@ -367,7 +367,7 @@
                 "description": "Identifies SFTP File Transfers above certain threshold in a 15min time period. It requires SFTP VERBOSE loglevel to be enabled.\n Please note that entity mapping for arrays is not supported, so when there is a single value in an array, we will pull that value from the array as a single string to populate the entity to support entity mapping features within Sentinel. Additionally, if the array is multivalued, we will input a string to indicate this with a unique hash so that matching will not occur.",
                 "severity": "Medium",
                 "enabled": false,
-                "query": ""
+                "query": "",
                 "queryFrequency": "PT15M",
                 "queryPeriod": "PT15M",
                 "triggerOperator": "GreaterThan",
@@ -459,7 +459,7 @@
                 "description": "Checks for Squid proxy events in Syslog associated with common mining pools .This query presumes the default Squid log format is being used.\n http://www.squid-cache.org/Doc/config/access_log/",
                 "severity": "Low",
                 "enabled": false,
-                "query": ""
+                "query": "",
                 "suppressionDuration": "PT1H",
                 "suppressionEnabled": false,
                 "tactics": [
@@ -531,7 +531,7 @@
                 "description": "Identifies failed logon attempts from unknown users in Syslog authpriv logs. The unknown user means the account that tried to log in isn't provisioned on the machine. A few hits could indicate someone attempting to access a machine they aren't authorized to access. \nIf there are many of hits, especially from outside your network, it could indicate a brute force attack. \nDefault threshold for logon attempts is 15.",
                 "severity": "Medium",
                 "enabled": false,
-                "query": ""
+                "query": "",
                 "queryFrequency": "P1D",
                 "queryPeriod": "P1D",
                 "triggerOperator": "GreaterThan",
